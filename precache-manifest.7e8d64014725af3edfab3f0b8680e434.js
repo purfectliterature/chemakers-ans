@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9c50fe63432d5060e2872cc978381739",
+    "revision": "6393b700a0e8cfffb847065e1d93f26c",
     "url": "/chemakers-ans/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemakers-ans/static/css/2.67123b20.chunk.css"
   },
   {
-    "revision": "19a95781bb443f214f1e",
+    "revision": "c3956b326d241a1e5929",
     "url": "/chemakers-ans/static/css/main.6d31d9e7.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/chemakers-ans/static/js/2.697a22cb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "19a95781bb443f214f1e",
-    "url": "/chemakers-ans/static/js/main.f1d72781.chunk.js"
+    "revision": "c3956b326d241a1e5929",
+    "url": "/chemakers-ans/static/js/main.191cb54a.chunk.js"
   },
   {
     "revision": "df375556d662eaccc591",
