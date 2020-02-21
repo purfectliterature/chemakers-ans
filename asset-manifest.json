@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/chemakers-ans/static/css/main.244db809.chunk.css",
-    "main.js": "/chemakers-ans/static/js/main.de5d0f98.chunk.js",
-    "main.js.map": "/chemakers-ans/static/js/main.de5d0f98.chunk.js.map",
+    "main.css": "/chemakers-ans/static/css/main.b61b28b1.chunk.css",
+    "main.js": "/chemakers-ans/static/js/main.0badd234.chunk.js",
+    "main.js.map": "/chemakers-ans/static/js/main.0badd234.chunk.js.map",
     "runtime-main.js": "/chemakers-ans/static/js/runtime-main.2681ff82.js",
     "runtime-main.js.map": "/chemakers-ans/static/js/runtime-main.2681ff82.js.map",
     "static/css/2.67123b20.chunk.css": "/chemakers-ans/static/css/2.67123b20.chunk.css",
-    "static/js/2.6244e594.chunk.js": "/chemakers-ans/static/js/2.6244e594.chunk.js",
-    "static/js/2.6244e594.chunk.js.map": "/chemakers-ans/static/js/2.6244e594.chunk.js.map",
+    "static/js/2.96d5f9ea.chunk.js": "/chemakers-ans/static/js/2.96d5f9ea.chunk.js",
+    "static/js/2.96d5f9ea.chunk.js.map": "/chemakers-ans/static/js/2.96d5f9ea.chunk.js.map",
     "index.html": "/chemakers-ans/index.html",
-    "precache-manifest.b18b518b96c72bfb8b8bc4aa5dbda4a6.js": "/chemakers-ans/precache-manifest.b18b518b96c72bfb8b8bc4aa5dbda4a6.js",
+    "precache-manifest.3cfcde151061bd03481cec20724bb888.js": "/chemakers-ans/precache-manifest.3cfcde151061bd03481cec20724bb888.js",
     "service-worker.js": "/chemakers-ans/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/chemakers-ans/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.244db809.chunk.css.map": "/chemakers-ans/static/css/main.244db809.chunk.css.map",
-    "static/js/2.6244e594.chunk.js.LICENSE.txt": "/chemakers-ans/static/js/2.6244e594.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/chemakers-ans/static/media/Graphik-RegularItalic.231fc40a.ttf",
+    "static/css/main.b61b28b1.chunk.css.map": "/chemakers-ans/static/css/main.b61b28b1.chunk.css.map",
+    "static/js/2.96d5f9ea.chunk.js.LICENSE.txt": "/chemakers-ans/static/js/2.96d5f9ea.chunk.js.LICENSE.txt",
+    "static/media/fonts.css": "/chemakers-ans/static/media/Graphik-RegularItalic.231fc40a.ttf",
     "static/media/Shapiro 95 Super Wide.ttf": "/chemakers-ans/static/media/Shapiro 95 Super Wide.61d032e8.ttf",
     "static/media/App.css": "/chemakers-ans/static/media/sample.e81426ad.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2681ff82.js",
     "static/css/2.67123b20.chunk.css",
-    "static/js/2.6244e594.chunk.js",
-    "static/css/main.244db809.chunk.css",
-    "static/js/main.de5d0f98.chunk.js"
+    "static/js/2.96d5f9ea.chunk.js",
+    "static/css/main.b61b28b1.chunk.css",
+    "static/js/main.0badd234.chunk.js"
   ]
 }
