@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import QrReader from 'react-qr-scanner';
+import QrReader from 'react-qr-reader';
 
 import "./Scanner.css";
 
 class Scanner extends Component {
     state = {  
-        result: "No Result"
-    }
-
-    handleScan = data => {
-        if (data) {
-            this.setState({ result: data });
-        }
+        previewStyle: {
+            width: "-webkit-fill-available",
+            height: "-webkit-fill-available",
+            "object-fit": "cover"
+        },
+        delay: 300,
+        facingMode: "environment",
+        showViewFinder: false
     }
 
     handleError = err => {
@@ -19,25 +20,15 @@ class Scanner extends Component {
     }
 
     render() { 
-        const previewStyle = {
-            width: "100%",
-            height: "fit-content"
-        }
-
-        return ( 
-            <div className="scanner">
-                <QrReader
-                    style={previewStyle}
-                    delay={300}
-                    onError={this.handleError}
-                    onScan={this.handleScan}
-                    facingMode={"rear"}
-                    showViewFinder={false}
-                    objectFit={"fill"}
-                />
-
-                <p>{this.state.result}</p>
-            </div>
+        return (
+            <QrReader
+                className="scanner-sec"
+                delay={this.state.delay}
+                onError={this.handleError}
+                onScan={(data) => this.props.onScan(data)}
+                facingMode={this.state.facingMode}
+                showViewFinder={this.state.showViewFinder}
+            />
         );
     }
 }

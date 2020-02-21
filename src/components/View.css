@@ -3,5 +3,7 @@
     height: 100%;
     position: absolute;
     z-index: 1;
-    background-color: red;
+    background: url("./../assets/logo-white.svg") no-repeat center top 20%, linear-gradient(39deg, rgba(221,32,118,1) 0%, rgba(234,167,34,1) 100%);
+    background-size: 80%, cover;
+    box-sizing: border-box;
 }

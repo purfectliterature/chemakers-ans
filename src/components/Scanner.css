@@ -4,3 +4,12 @@
     clear: both;
     overflow: hidden;
 }
+
+.scanner-sec {
+    width: 100%;
+    height: 100%;
+}
+
+.scanner-sec section{
+    height: 100%;
+}
