@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Shapiro";
+    src: local("Shapiro"), url("./fonts/Shapiro 95 Super Wide.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-RegularItalic.ttf") format("truetype");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Graphik";
+    src: local("Graphik"), url("./fonts/Graphik-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+}
