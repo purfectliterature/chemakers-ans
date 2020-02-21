@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/chemakers-ans/static/css/main.aa668249.chunk.css",
+    "main.css": "/chemakers-ans/static/css/main.5c91f8b1.chunk.css",
     "main.js": "/chemakers-ans/static/js/main.beabf98b.chunk.js",
     "main.js.map": "/chemakers-ans/static/js/main.beabf98b.chunk.js.map",
     "runtime-main.js": "/chemakers-ans/static/js/runtime-main.2681ff82.js",
@@ -9,10 +9,10 @@
     "static/js/2.697a22cb.chunk.js": "/chemakers-ans/static/js/2.697a22cb.chunk.js",
     "static/js/2.697a22cb.chunk.js.map": "/chemakers-ans/static/js/2.697a22cb.chunk.js.map",
     "index.html": "/chemakers-ans/index.html",
-    "precache-manifest.d99098c0a48360c582c339aad985db9f.js": "/chemakers-ans/precache-manifest.d99098c0a48360c582c339aad985db9f.js",
+    "precache-manifest.4045fa40af750062b9a6e5481ee19256.js": "/chemakers-ans/precache-manifest.4045fa40af750062b9a6e5481ee19256.js",
     "service-worker.js": "/chemakers-ans/service-worker.js",
     "static/css/2.67123b20.chunk.css.map": "/chemakers-ans/static/css/2.67123b20.chunk.css.map",
-    "static/css/main.aa668249.chunk.css.map": "/chemakers-ans/static/css/main.aa668249.chunk.css.map",
+    "static/css/main.5c91f8b1.chunk.css.map": "/chemakers-ans/static/css/main.5c91f8b1.chunk.css.map",
     "static/js/2.697a22cb.chunk.js.LICENSE.txt": "/chemakers-ans/static/js/2.697a22cb.chunk.js.LICENSE.txt",
     "static/media/fonts.css": "/chemakers-ans/static/media/Graphik-RegularItalic.231fc40a.ttf",
     "static/media/Shapiro 95 Super Wide.ttf": "/chemakers-ans/static/media/Shapiro 95 Super Wide.61d032e8.ttf",
@@ -22,7 +22,7 @@
     "static/js/runtime-main.2681ff82.js",
     "static/css/2.67123b20.chunk.css",
     "static/js/2.697a22cb.chunk.js",
-    "static/css/main.aa668249.chunk.css",
+    "static/css/main.5c91f8b1.chunk.css",
     "static/js/main.beabf98b.chunk.js"
   ]
 }
