@@ -6,7 +6,7 @@ class NoticeUp extends Component {
     render() { 
         return (
             <div className="notice-up acrylic acrylic-dark" style={this.props.visible ? {visibility: "visible"} : {visibility: "hidden"}} onClick={() => this.props.onToggleInstructions()}>
-                <img src={instructions}/>
+                <img src={instructions} alt="instructions"/>
             </div>
         );
     }

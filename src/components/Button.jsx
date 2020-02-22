@@ -4,7 +4,7 @@ import "./Button.css";
 class Button extends Component {
     addIcon = () => {
         if (this.props.icon) {
-            return (<div><img src={this.props.icon} style={{
+            return (<div><img src={this.props.icon} alt="icon" style={{
                 "height": "100%",
                 "width": "100%"
             }}/></div>);

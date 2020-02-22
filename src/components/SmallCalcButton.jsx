@@ -5,7 +5,7 @@ import "./SmallCalcButton.css";
 class SmallCalcButton extends Component {
     render() { 
         return (
-            <button 
+            <button
                 className={"small-button " + this.props.colour}
                 type="submit"
                 onClick={() => this.props.onClick(this.props.function)}>

@@ -11,11 +11,11 @@ class HomeView extends Component {
             <View name="home-view" content={
                 <React.Fragment>
                     <div className="top-bar">
-                        <img src={chemakersAnsLogo}/>
+                        <img src={chemakersAnsLogo} alt="logo"/>
                     </div>
                     
                     <div className="instructions">
-                        <img src={instructions}/>
+                        <img src={instructions} alt="instructions"/>
                     </div>
                 </React.Fragment>
             }/>

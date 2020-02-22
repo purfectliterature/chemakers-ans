@@ -11,7 +11,7 @@ import {
 } from "react-router-dom";
 
 import "./App.css";
-import { render } from "@testing-library/react";
+import { answers } from "./answers.js";
 
 const routes = {
     home: "/",
@@ -26,23 +26,36 @@ const meta = {
 
 class App extends Component {
     state = {
-        currentView: "manual"
+        currentView: "home",
+        code: "01"
     }
 
     setCurrentView = viewName => {
         this.setState({ currentView: viewName });
     }
 
+    setCode = code => {
+        this.setState({ code: code });
+    }
+
+    goBackToHomeFromAnswersViewer = () => {
+        this.setCurrentView("home");
+    }
+
+    validateCode = code => {
+        return (code in answers);
+    }
+
     render() {
         return (
             <Router>
-                <BottomSheet routes={routes} current={this.state.currentView} onSetCurrentView={this.setCurrentView}/>
+                <BottomSheet routes={routes} current={this.state.currentView} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode}/>
 
                 <Switch>
                     <Route exact path="/" component={HomeView}/>
-                    <Route path="/scan" component={ScannerView}/>
+                    <Route path="/scan" render={(props) => <ScannerView {...props} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode} />}/>
                     <Route path="/manual" component={ManualEntryView}/>
-                    <Route path="/viewer" component={AnswerView}/>
+                    <Route path="/viewer" render={(props) => <AnswerView {...props} code={this.state.code} onClose={this.goBackToHomeFromAnswersViewer}/>}/>
                 </Switch>
             </Router>
         );

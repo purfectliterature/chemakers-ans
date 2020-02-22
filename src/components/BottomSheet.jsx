@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import LinkLabel from './LinkLabel.jsx';
 import Button from './Button.jsx';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { strings } from './../strings';
 import { glyphs } from '../glyphs';
 
@@ -9,9 +9,18 @@ import "./BottomSheet.css"
 import BottomSheetCalculator from "./BottomSheetCalculator.jsx";
 
 class BottomSheet extends Component {
+    state = {
+        redirect: null
+    }
 
     handleManualEntry = code => {
-        alert(code);
+        if (code) {
+            if (this.props.onValidateCode(code)) {
+                this.props.onViewAnswer(code);
+                this.props.onSetCurrentView("/viewer")
+                this.setState({ redirect: "/viewer" });
+            }
+        }
     }
 
     makeButton = (route, to, caption, colour, icon) => {
@@ -39,14 +48,20 @@ class BottomSheet extends Component {
     }
 
     render() {
-        return (
-            <div className="acrylic acrylic-light bottom-sheet">
-                <div className="padded-zone">
-                    {this.bringCurrentView()}
+        if (this.state.redirect) {
+            const redirector = <Redirect to={this.state.redirect} />;
+            this.setState({ redirect: null });
+            return redirector;
+        } else {
+            return (
+                <div className="acrylic acrylic-light bottom-sheet">
+                    <div className="padded-zone">
+                        {this.bringCurrentView()}
+                    </div>
+                    {this.bringManualEntry()}
                 </div>
-                {this.bringManualEntry()}
-            </div>
-        );
+            );
+        }
     }
 }
  

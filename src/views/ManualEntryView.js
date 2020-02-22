@@ -4,6 +4,7 @@ import chemakersAnsLogo from "./../assets/chemakers-ans-white.svg";
 
 import "./ManualEntryView.css";
 import "./HomeView.css";
+import { strings } from '../strings.js';
 
 class ManualEntryView extends Component {
     render() { 
@@ -11,7 +12,7 @@ class ManualEntryView extends Component {
             <View name="manual-entry-view" content={
                 <React.Fragment>
                     <div className="top-bar">
-                        <img src={chemakersAnsLogo}/>    
+                        <img src={chemakersAnsLogo} alt={strings.APP_NAME}/>
                     </div>
                 </React.Fragment>
             }/>
