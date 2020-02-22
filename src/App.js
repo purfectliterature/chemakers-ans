@@ -26,7 +26,7 @@ const meta = {
 
 class App extends Component {
     state = {
-        currentView: "home"
+        currentView: "manual"
     }
 
     setCurrentView = viewName => {

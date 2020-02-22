@@ -4,7 +4,6 @@ import './index.css';
 import './fonts.css';
 import * as serviceWorker from './serviceWorker';
 import App from './App';
-import HomeView from "./views/HomeView";
 
 document.body.style.overflow = "hidden";
 

@@ -4,7 +4,7 @@ import "./LinkLabel.css";
 class LinkLabel extends Component {
     render() { 
         return (  
-            <p className="link-label">{this.props.text}</p>
+            <p className="link-label" onClick={this.props.onClick}>{this.props.text}</p>
         );
     }
 }

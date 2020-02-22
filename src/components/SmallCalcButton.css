@@ -1,0 +1,17 @@
+.small-button {
+    border: none;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Shapiro";
+    font-size: 30px;
+    color: white;
+    width: 65px;
+    height: 65px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.3) 0 3px 7px;
+    margin: 10px;
+}
