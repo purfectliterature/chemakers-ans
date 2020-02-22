@@ -12,16 +12,13 @@ import {
 
 import "./App.css";
 import { answers } from "./answers.js";
+import { Helmet } from "react-helmet";
 
 const routes = {
     home: "/",
     scan: "/scan",
     manual: "/manual",
     viewer: "/viewer"
-};
-
-const meta = {
-    "mobile-web-app-capable": "yes"
 };
 
 class App extends Component {
@@ -57,6 +54,13 @@ class App extends Component {
                     <Route path="/manual" component={ManualEntryView}/>
                     <Route path="/viewer" render={(props) => <AnswerView {...props} code={this.state.code} onClose={this.goBackToHomeFromAnswersViewer}/>}/>
                 </Switch>
+
+                <Helmet>
+                    <title>CheMakers Answers</title>
+                    <meta name="mobile-web-app-capable" content="yes"/>
+                    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0"/>
+                    <meta name="theme-color" content="#DD2076"/>
+                </Helmet>
             </Router>
         );
     }
