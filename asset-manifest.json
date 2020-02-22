@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/chemakers-ans/static/css/main.ba9c1693.chunk.css",
-    "main.js": "/chemakers-ans/static/js/main.cc166dc9.chunk.js",
-    "main.js.map": "/chemakers-ans/static/js/main.cc166dc9.chunk.js.map",
+    "main.css": "/chemakers-ans/static/css/main.444417be.chunk.css",
+    "main.js": "/chemakers-ans/static/js/main.2227e49f.chunk.js",
+    "main.js.map": "/chemakers-ans/static/js/main.2227e49f.chunk.js.map",
     "runtime-main.js": "/chemakers-ans/static/js/runtime-main.2681ff82.js",
     "runtime-main.js.map": "/chemakers-ans/static/js/runtime-main.2681ff82.js.map",
-    "static/css/2.afe2c7cd.chunk.css": "/chemakers-ans/static/css/2.afe2c7cd.chunk.css",
-    "static/js/2.00a331a0.chunk.js": "/chemakers-ans/static/js/2.00a331a0.chunk.js",
-    "static/js/2.00a331a0.chunk.js.map": "/chemakers-ans/static/js/2.00a331a0.chunk.js.map",
+    "static/css/2.8bd1c71a.chunk.css": "/chemakers-ans/static/css/2.8bd1c71a.chunk.css",
+    "static/js/2.4cf6cd8e.chunk.js": "/chemakers-ans/static/js/2.4cf6cd8e.chunk.js",
+    "static/js/2.4cf6cd8e.chunk.js.map": "/chemakers-ans/static/js/2.4cf6cd8e.chunk.js.map",
     "index.html": "/chemakers-ans/index.html",
-    "precache-manifest.7db41dbfbd8ac2647f39ad9d313dd249.js": "/chemakers-ans/precache-manifest.7db41dbfbd8ac2647f39ad9d313dd249.js",
+    "precache-manifest.782c37bcdce5cfd7502f86c460369663.js": "/chemakers-ans/precache-manifest.782c37bcdce5cfd7502f86c460369663.js",
     "service-worker.js": "/chemakers-ans/service-worker.js",
-    "static/css/2.afe2c7cd.chunk.css.map": "/chemakers-ans/static/css/2.afe2c7cd.chunk.css.map",
-    "static/css/main.ba9c1693.chunk.css.map": "/chemakers-ans/static/css/main.ba9c1693.chunk.css.map",
-    "static/js/2.00a331a0.chunk.js.LICENSE.txt": "/chemakers-ans/static/js/2.00a331a0.chunk.js.LICENSE.txt",
+    "static/css/2.8bd1c71a.chunk.css.map": "/chemakers-ans/static/css/2.8bd1c71a.chunk.css.map",
+    "static/css/main.444417be.chunk.css.map": "/chemakers-ans/static/css/main.444417be.chunk.css.map",
+    "static/js/2.4cf6cd8e.chunk.js.LICENSE.txt": "/chemakers-ans/static/js/2.4cf6cd8e.chunk.js.LICENSE.txt",
     "static/media/0_C06_01X.jpg": "/chemakers-ans/static/media/0_C06_01X.bdf46fa2.jpg",
     "static/media/0_C06_02X.jpg": "/chemakers-ans/static/media/0_C06_02X.fe868423.jpg",
     "static/media/0_C06_03X.jpg": "/chemakers-ans/static/media/0_C06_03X.7325ad1e.jpg",
@@ -76,9 +76,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2681ff82.js",
-    "static/css/2.afe2c7cd.chunk.css",
-    "static/js/2.00a331a0.chunk.js",
-    "static/css/main.ba9c1693.chunk.css",
-    "static/js/main.cc166dc9.chunk.js"
+    "static/css/2.8bd1c71a.chunk.css",
+    "static/js/2.4cf6cd8e.chunk.js",
+    "static/css/main.444417be.chunk.css",
+    "static/js/main.2227e49f.chunk.js"
   ]
 }
