@@ -4,6 +4,16 @@ object-assign
 @license MIT
 */
 
+/*!
+ * Viewer.js v1.5.0
+ * https://fengyuanchen.github.io/viewerjs
+ *
+ * Copyright 2015-present Chen Fengyuan
+ * Released under the MIT license
+ *
+ * Date: 2019-11-23T05:10:26.193Z
+ */
+
 /** @license React v0.18.0
  * scheduler.production.min.js
  *
