@@ -17,8 +17,8 @@ export default class ScannerView extends Component {
         if (data) {
             if (this.props.onValidateCode(data)) {
                 this.props.onViewAnswer(data);
-                this.props.onSetCurrentView("/viewer")
-                this.setState({ redirect: "/viewer" });
+                this.props.onSetCurrentView("/chemakers-ans/viewer")
+                this.setState({ redirect: "/chemakers-ans/viewer" });
             }
         }
     }

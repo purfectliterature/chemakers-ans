@@ -15,10 +15,10 @@ import { answers } from "./answers.js";
 import { Helmet } from "react-helmet";
 
 const routes = {
-    home: "/",
-    scan: "/scan",
-    manual: "/manual",
-    viewer: "/viewer"
+    home: "/chemakers-ans/",
+    scan: "/chemakers-ans/scan",
+    manual: "/chemakers-ans/manual",
+    viewer: "/chemakers-ans/viewer"
 };
 
 class App extends Component {
@@ -49,10 +49,10 @@ class App extends Component {
                 <BottomSheet routes={routes} current={this.state.currentView} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode}/>
 
                 <Switch>
-                    <Route exact path="/" component={HomeView}/>
-                    <Route path="/scan" render={(props) => <ScannerView {...props} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode} />}/>
-                    <Route path="/manual" component={ManualEntryView}/>
-                    <Route path="/viewer" render={(props) => <AnswerView {...props} code={this.state.code} onClose={this.goBackToHomeFromAnswersViewer}/>}/>
+                    <Route exact path="/chemakers-ans/" component={HomeView}/>
+                    <Route path="/chemakers-ans/scan" render={(props) => <ScannerView {...props} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode} />}/>
+                    <Route path="/chemakers-ans/manual" component={ManualEntryView}/>
+                    <Route path="/chemakers-ans/viewer" render={(props) => <AnswerView {...props} code={this.state.code} onClose={this.goBackToHomeFromAnswersViewer}/>}/>
                 </Switch>
 
                 <Helmet>
