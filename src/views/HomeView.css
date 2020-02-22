@@ -1,0 +1,24 @@
+.top-bar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.top-bar img {
+    width: 50%;
+    margin: 20px;
+}
+
+.instructions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions img {
+    width: 75%;
+    margin: 10%;
+}

@@ -1,0 +1,15 @@
+.toggle-instructions {
+    position: fixed;
+    z-index: 98;
+    margin: 20px;
+    border-radius: 100px;
+    font-family: "Graphik";
+    font-size: 22px;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: white;
+    -webkit-box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.4);
+}

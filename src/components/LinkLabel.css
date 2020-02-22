@@ -1,0 +1,9 @@
+.link-label {
+    font-family: "Graphik";
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+    color: rgb(0,122,255);
+    padding: 5px 20px;
+}

@@ -20,16 +20,20 @@ class Scanner extends Component {
     }
 
     render() { 
-        return (
-            <QrReader
-                className="scanner-sec"
-                delay={this.state.delay}
-                onError={this.handleError}
-                onScan={(data) => this.props.onScan(data)}
-                facingMode={this.state.facingMode}
-                showViewFinder={this.state.showViewFinder}
-            />
-        );
+        if (this.props.enabled === true) {
+            return (
+                <QrReader
+                    className="scanner-sec"
+                    delay={this.state.delay}
+                    onError={this.handleError}
+                    onScan={(data) => this.props.onScan(data)}
+                    facingMode={this.state.facingMode}
+                    showViewFinder={this.state.showViewFinder}
+                />
+            );
+        } else {
+            return <React.Fragment></React.Fragment>;
+        }
     }
 }
  
