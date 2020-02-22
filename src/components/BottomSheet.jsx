@@ -19,6 +19,8 @@ class BottomSheet extends Component {
                 this.props.onViewAnswer(code);
                 this.props.onSetCurrentView("viewer")
                 this.setState({ redirect: "/chemakers-ans/viewer" });
+            } else {
+                this.props.onInvalidCode();
             }
         }
     }

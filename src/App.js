@@ -10,10 +10,14 @@ import {
     Route
 } from "react-router-dom";
 
+import { ToastContainer, toast, Bounce } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./components/Toast.css";
+
 import "./App.css";
 import { answers } from "./answers.js";
 import { Helmet } from "react-helmet";
-
+import { strings } from "./strings.js";
 const routes = {
     home: "/chemakers-ans/",
     scan: "/chemakers-ans/scan",
@@ -24,7 +28,8 @@ const routes = {
 class App extends Component {
     state = {
         currentView: "home",
-        code: "01"
+        code: "01",
+        toastId: null
     }
 
     setCurrentView = viewName => {
@@ -43,14 +48,26 @@ class App extends Component {
         return (code in answers);
     }
 
+    toastInvalidCode = () => {
+        if (!toast.isActive(this.state.toastId)) {
+            this.setState({ toastId: toast(strings.problem_scanning, {
+                position: toast.POSITION.TOP_CENTER,
+                className: "toast-notification",
+                containerId: "problem-scanning",
+                toastId: "problem-scanning",
+                progressClassName: "toast-notification-progress-bar"
+            }) });
+        }
+    }
+
     render() {
         return (
             <Router>
-                <BottomSheet routes={routes} current={this.state.currentView} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode}/>
+                <BottomSheet routes={routes} current={this.state.currentView} onInvalidCode={this.toastInvalidCode} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode}/>
 
                 <Switch>
                     <Route exact path="/chemakers-ans/" component={HomeView}/>
-                    <Route path="/chemakers-ans/scan" render={(props) => <ScannerView {...props} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode} />}/>
+                    <Route path="/chemakers-ans/scan" render={(props) => <ScannerView {...props} onInvalidCode={this.toastInvalidCode} onValidateCode={this.validateCode} onSetCurrentView={this.setCurrentView} onViewAnswer={this.setCode} />}/>
                     <Route path="/chemakers-ans/manual" component={ManualEntryView}/>
                     <Route path="/chemakers-ans/viewer" render={(props) => <AnswerView {...props} code={this.state.code} onClose={this.goBackToHomeFromAnswersViewer}/>}/>
                 </Switch>
@@ -61,6 +78,8 @@ class App extends Component {
                     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0"/>
                     <meta name="theme-color" content="#DD2076"/>
                 </Helmet>
+
+                <ToastContainer autoClose={3000} transition={Bounce} closeButton={false} enableMultiContainer containerId={"problem-scanning"} />
             </Router>
         );
     }
