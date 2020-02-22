@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import View from './../components/View.jsx';
-import "./AnswerView.css";
 import Answer from '../components/Answer.jsx';
 import { glyphs } from '../glyphs.js';
 import { Link } from "react-router-dom";

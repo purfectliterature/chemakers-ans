@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import View from './../components/View.jsx';
 import chemakersAnsLogo from "./../assets/chemakers-ans-white.svg";
-
-import "./ManualEntryView.css";
 import "./HomeView.css";
 import { strings } from '../strings.js';
 
