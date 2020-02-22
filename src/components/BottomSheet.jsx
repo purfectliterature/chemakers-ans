@@ -17,7 +17,7 @@ class BottomSheet extends Component {
         if (code) {
             if (this.props.onValidateCode(code)) {
                 this.props.onViewAnswer(code);
-                this.props.onSetCurrentView("/chemakers-ans/viewer")
+                this.props.onSetCurrentView("viewer")
                 this.setState({ redirect: "/chemakers-ans/viewer" });
             }
         }
@@ -54,7 +54,7 @@ class BottomSheet extends Component {
             return redirector;
         } else {
             return (
-                <div className="acrylic acrylic-light bottom-sheet">
+                <div className="acrylic acrylic-light bottom-sheet" style={this.props.current === "viewer" ? {visibility: "hidden"} : {visibility: "visible"}}>
                     <div className="padded-zone">
                         {this.bringCurrentView()}
                     </div>
